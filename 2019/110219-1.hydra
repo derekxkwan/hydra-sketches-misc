@@ -1,0 +1,6 @@
+voronoi(20,5,0.5)
+	.colorama(({time}) => Math.sin(time)*0.03 + 0.96)
+	.modulatePixelate(osc(0.01),10)
+  	.modulateScrollX(osc(20,0.1,0.5),1.5,0)
+	.modulateScale(voronoi(5).modulateRotate(osc(10)).kaleid(3))
+	  .out(o0)
